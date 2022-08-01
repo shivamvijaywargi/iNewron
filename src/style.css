@@ -1,0 +1,104 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: Roboto, sans-serif;
+}
+
+/* Use rugged-border class to get the rugged border ;) */
+/* Use curved-border class for a curved border */
+/* Use before-line for line to clip images */
+/* Use after-clip class to use clip */
+
+/* Use rugged-border class to get the rugged border ;) */
+.rugged-border {
+  position: relative;
+}
+
+.rugged-border::before {
+  background-color: #d47c13;
+  bottom: auto;
+  content: '';
+  display: block;
+  height: 94px;
+  left: 0;
+  position: absolute;
+  top: 100%;
+  transform: rotate(180deg);
+  width: 100%;
+  z-index: 8;
+  -webkit-mask-image: url(./assets/slider-bottom-pattern.png);
+  mask-image: url(./assets/slider-bottom-pattern.png);
+  -webkit-mask-position: left top;
+  mask-position: left top;
+}
+
+/* Use curved-border class for a curved border */
+/* .curved-border {
+  position: relative;
+} */
+
+.curved-border::before {
+  background-color: #d47c13;
+  bottom: 99%;
+  content: '';
+  display: block;
+
+  pointer-events: none;
+  position: absolute;
+  right: 0;
+  width: 786px;
+  /* z-index: 8; */
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-size: 100% 100%;
+  mask-size: 100% 100%;
+  -webkit-mask-image: url(./assets/curvy-top.png);
+  mask-image: url(./assets/curvy-top.png);
+  -webkit-mask-position: left top;
+  mask-position: left top;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+}
+
+/* Use before-line for line to clip images */
+.before-line {
+  position: relative;
+}
+
+.before-line::before {
+  content: '';
+  display: block;
+  position: absolute;
+  bottom: -24px;
+  width: 2px;
+  height: 24px;
+  background: #2b2b2b;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+
+/* Use after-clip class to use clip */
+.after-clip {
+  position: relative;
+}
+
+.after-clip::after {
+  background-image: url(./assets/clip.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  border: none;
+  bottom: 100%;
+  content: '';
+  display: block;
+  height: 175px;
+  left: 0;
+  margin: 0 auto;
+  position: absolute;
+  right: 0;
+  top: -145px;
+  width: 50px;
+}

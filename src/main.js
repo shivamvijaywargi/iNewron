@@ -34,7 +34,6 @@ const sr = ScrollReveal({
 
 sr.reveal(`.hero-text`, { origin: 'left', delay: 200 });
 sr.reveal(`.hero__img`, { origin: 'right', delay: 200 });
-sr.reveal(`.hero-sub-text`, { origin: 'bottom', delay: 200 });
 
 sr.reveal(`.animate-left-100`, { origin: 'left', delay: 100 });
 sr.reveal(`.animate-left-200`, { origin: 'left', delay: 200 });
@@ -42,6 +41,7 @@ sr.reveal(`.animate-left-200`, { origin: 'left', delay: 200 });
 sr.reveal(`.animate-right-200`, { origin: 'right', delay: 200 });
 sr.reveal(`.animate-right-300`, { origin: 'right', delay: 300 });
 
+sr.reveal(`.animate-bottom-200`, { origin: 'bottom', delay: 200 });
 sr.reveal(`.animate-bottom-300`, { delay: 300 });
 sr.reveal(`.animate-bottom-400`, { delay: 400 });
 sr.reveal(`.animate-bottom-500`, { delay: 500 });

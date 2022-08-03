@@ -31,4 +31,4 @@ The site is compatible with almost all screen sizes except for smart watch scree
 
 <a href="https://github.com/shivamvijaywargi"> <img src="https://github.com/shivamvijaywargi.png" alt="Shivam Vijaywargi" style="width:50px;"/></a>
 
-## I would like to thank undraw, flaticon, Canva and some other places which hosted the illustrations, icons on their website so that people can use them in their projects.
+#### I would like to thank undraw, flaticon, Canva and some other places which hosted the illustrations, icons on their website so that people can use them in their projects.
